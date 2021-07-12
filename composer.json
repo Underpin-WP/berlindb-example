@@ -1,0 +1,15 @@
+{
+    "name": "wpda/muplugin",
+    "type": "plugin",
+    "require": {
+        "underpin/underpin": "^1.3",
+        "underpin/script-loader": "^1.1",
+        "underpin/block-loader": "^1.1",
+        "underpin/berlindb-extension": "^1.2"
+    },
+    "extra":{
+    	"installer-paths": {
+	      "vendor/{$vendor}/{$name}": ["type:wordpress-muplugin"]
+	}
+    }
+}

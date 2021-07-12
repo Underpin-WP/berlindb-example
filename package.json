@@ -1,0 +1,17 @@
+{
+  "name": "berlindb_example",
+  "version": "1.0.0",
+  "description": "BerlinDB Example",
+  "scripts": {
+    "build": "wp-scripts build",
+    "format:js": "wp-scripts format-js",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "15.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

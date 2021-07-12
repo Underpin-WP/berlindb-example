@@ -1,0 +1,511 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a2982a26fcb3827c287b8e374f6b2343",
+    "packages": [
+        {
+            "name": "berlindb/core",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/berlindb/core.git",
+                "reference": "52f07e192b484d201d668daef0ba290df5836ecb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/berlindb/core/zipball/52f07e192b484d201d668daef0ba290df5836ecb",
+                "reference": "52f07e192b484d201d668daef0ba290df5836ecb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BerlinDB\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-only"
+            ],
+            "description": "A collection of PHP classes and functions that aims to provide an ORM-like experience and interface to WordPress database tables.",
+            "support": {
+                "issues": "https://github.com/berlindb/core/issues",
+                "source": "https://github.com/berlindb/core/tree/2.0.0"
+            },
+            "time": "2021-07-12T14:55:04+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "ae03311f45dfe194412081526be2e003960df74b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/ae03311f45dfe194412081526be2e003960df74b",
+                "reference": "ae03311f45dfe194412081526be2e003960df74b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "tastyigniter",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.11.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-04-28T06:42:17+00:00"
+        },
+        {
+            "name": "underpin/berlindb-extension",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Underpin-WP/underpin-berlindb.git",
+                "reference": "d1fde3d62c39ed19099b8ba0a7f10fd1687f8bf6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Underpin-WP/underpin-berlindb/zipball/d1fde3d62c39ed19099b8ba0a7f10fd1687f8bf6",
+                "reference": "d1fde3d62c39ed19099b8ba0a7f10fd1687f8bf6",
+                "shasum": ""
+            },
+            "require": {
+                "berlindb/core": "^2.0",
+                "underpin/underpin": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "underpin-berlin-db.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "a@alexstandiford.com"
+                }
+            ],
+            "description": "BerlinDB Implementation for Underpin",
+            "support": {
+                "issues": "https://github.com/Underpin-WP/underpin-berlindb/issues",
+                "source": "https://github.com/Underpin-WP/underpin-berlindb/tree/1.2.0"
+            },
+            "time": "2021-07-12T15:26:29+00:00"
+        },
+        {
+            "name": "underpin/block-loader",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Underpin-WP/underpin-block-loader.git",
+                "reference": "875b6131fcd70d95688d9ecd45cbc5a6e08889b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Underpin-WP/underpin-block-loader/zipball/875b6131fcd70d95688d9ecd45cbc5a6e08889b9",
+                "reference": "875b6131fcd70d95688d9ecd45cbc5a6e08889b9",
+                "shasum": ""
+            },
+            "require": {
+                "underpin/script-loader": "^1.1",
+                "underpin/style-loader": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "blocks.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "a@alexstandiford.com"
+                }
+            ],
+            "description": "Block Loader for Underpin",
+            "support": {
+                "issues": "https://github.com/Underpin-WP/underpin-block-loader/issues",
+                "source": "https://github.com/Underpin-WP/underpin-block-loader/tree/1.1.0"
+            },
+            "time": "2021-06-22T02:31:53+00:00"
+        },
+        {
+            "name": "underpin/cron-job-loader",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Underpin-WP/cron-job-loader.git",
+                "reference": "2676e465f934e883d8fba7707e3c2b34d7413066"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Underpin-WP/cron-job-loader/zipball/2676e465f934e883d8fba7707e3c2b34d7413066",
+                "reference": "2676e465f934e883d8fba7707e3c2b34d7413066",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "cron-jobs.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "a@alexstandiford.com"
+                }
+            ],
+            "description": "Cron Job Loader for Underpin",
+            "support": {
+                "issues": "https://github.com/Underpin-WP/cron-job-loader/issues",
+                "source": "https://github.com/Underpin-WP/cron-job-loader/tree/1.0.0"
+            },
+            "time": "2021-05-11T18:35:25+00:00"
+        },
+        {
+            "name": "underpin/decision-list-loader",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Underpin-WP/decision-list-loader.git",
+                "reference": "1b17e130157e7aba4dad36e0b68f8b0f3aee0323"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Underpin-WP/decision-list-loader/zipball/1b17e130157e7aba4dad36e0b68f8b0f3aee0323",
+                "reference": "1b17e130157e7aba4dad36e0b68f8b0f3aee0323",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "decision-lists.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "a@alexstandiford.com"
+                }
+            ],
+            "description": "Decision List loader for Underpin",
+            "support": {
+                "issues": "https://github.com/Underpin-WP/decision-list-loader/issues",
+                "source": "https://github.com/Underpin-WP/decision-list-loader/tree/1.0.0"
+            },
+            "time": "2021-05-06T00:44:13+00:00"
+        },
+        {
+            "name": "underpin/logger-loader",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Underpin-WP/logger-loader.git",
+                "reference": "afe8c1151fa93dccad08111d00d8c986dc3e6f1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Underpin-WP/logger-loader/zipball/afe8c1151fa93dccad08111d00d8c986dc3e6f1d",
+                "reference": "afe8c1151fa93dccad08111d00d8c986dc3e6f1d",
+                "shasum": ""
+            },
+            "require": {
+                "underpin/cron-job-loader": "^1.0",
+                "underpin/decision-list-loader": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "logger.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "a@alexstandiford.com"
+                }
+            ],
+            "description": "Logger Loader for Underpin",
+            "support": {
+                "issues": "https://github.com/Underpin-WP/logger-loader/issues",
+                "source": "https://github.com/Underpin-WP/logger-loader/tree/1.1.0"
+            },
+            "time": "2021-06-22T02:41:15+00:00"
+        },
+        {
+            "name": "underpin/script-loader",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Underpin-WP/script-loader.git",
+                "reference": "5f21ad24d40deff33831911f1f10863ebe0056e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Underpin-WP/script-loader/zipball/5f21ad24d40deff33831911f1f10863ebe0056e8",
+                "reference": "5f21ad24d40deff33831911f1f10863ebe0056e8",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "scripts.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "a@alexstandiford.com"
+                }
+            ],
+            "description": "Script Loader for Underpin",
+            "support": {
+                "issues": "https://github.com/Underpin-WP/script-loader/issues",
+                "source": "https://github.com/Underpin-WP/script-loader/tree/1.1.2"
+            },
+            "time": "2021-07-09T14:14:31+00:00"
+        },
+        {
+            "name": "underpin/style-loader",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Underpin-WP/style-loader.git",
+                "reference": "f98ce4d41d2514a6c73ec7e74c224804a54f3f58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Underpin-WP/style-loader/zipball/f98ce4d41d2514a6c73ec7e74c224804a54f3f58",
+                "reference": "f98ce4d41d2514a6c73ec7e74c224804a54f3f58",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "styles.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "a@alexstandiford.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/Underpin-WP/style-loader/issues",
+                "source": "https://github.com/Underpin-WP/style-loader/tree/1.1.1"
+            },
+            "time": "2021-07-09T13:57:39+00:00"
+        },
+        {
+            "name": "underpin/underpin",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Underpin-WP/underpin.git",
+                "reference": "66892647681ab5410a0fd0bbb9e10cfa10b6b20c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Underpin-WP/underpin/zipball/66892647681ab5410a0fd0bbb9e10cfa10b6b20c",
+                "reference": "66892647681ab5410a0fd0bbb9e10cfa10b6b20c",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.10",
+                "underpin/logger-loader": "^1.0"
+            },
+            "type": "wordpress-muplugin",
+            "autoload": {
+                "files": [
+                    "Underpin.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "a@alexstandiford.com"
+                }
+            ],
+            "description": "Underpin WordPress framework",
+            "support": {
+                "issues": "https://github.com/Underpin-WP/underpin/issues",
+                "source": "https://github.com/Underpin-WP/underpin/tree/1.3.0"
+            },
+            "time": "2021-06-22T02:23:38+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
