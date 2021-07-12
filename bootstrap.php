@@ -182,6 +182,7 @@ add_filter( 'the_content', function ( $content ) {
 	foreach ( $query->items as $item ) {
 		/**
 		 * Queried items become instances of Book. This method is declared in our Book class via the template trait.
+		 * @see \Underpin\Traits\Templates
 		 * @var $item \BerlinDB_Example\DB\Rows\Book
 		 */
 		echo $item->get_template('index');
