@@ -45,6 +45,11 @@ function berlindb_example() {
 // Lock and load.
 berlindb_example();
 
+/**
+ * Register the Books database model to Underpin.
+ * This connects the Table, Schema, and Query class under a single database Model.
+ * @see \Underpin_BerlinDB\Abstracts\Database_Model for more information.
+ */
 berlindb_example()->berlin_db()->add( 'books', [
 	'table'             => 'BerlinDB_Example\DB\Tables\Books',
 	'schema'            => 'BerlinDB_Example\DB\Schemas\Books',
@@ -62,8 +67,14 @@ berlindb_example()->berlin_db()->add( 'books', [
  */
 add_action( 'init', function () {
 
-	// First, we're going to see if the database already has records. If it does, we'll skip adding these records.
-	// This prevents duplicate records from being created on each page load.
+	// To reset the DB, uncomment this line
+//	berlindb_example()->berlin_db()->reset();
+
+	/**
+	 * First, we're going to see if the database already has records. If it does, we'll skip adding these records.
+	 * This prevents duplicate records from being created on each page load.
+	 * @var $query \BerlinDB_Example\DB\Queries\Book_Query
+	 */
 	$query = berlindb_example()->berlin_db()->get( 'books' )->query( [
 		'number' => 1,    // Only retrieve a single record
 		'fields' => 'ids' // Just return an array of IDs. This helps keep our query performant.
@@ -158,6 +169,10 @@ add_action( 'init', function () {
  * This example hooks into WordPress's the_content, but this could be done anywhere.
  */
 add_filter( 'the_content', function ( $content ) {
+	/**
+	 * Query the database
+	 * @var $query \BerlinDB_Example\DB\Queries\Book_Query
+	 */
 	$query = berlindb_example()->berlin_db()->get( 'books' )->query( [
 		'author'  => 'J.K. Rowling',   // Only get books written by J.K Rowling
 		'orderby' => 'date_published', // Sort the books by the date they were published
@@ -165,7 +180,10 @@ add_filter( 'the_content', function ( $content ) {
 	] );
 
 	foreach ( $query->items as $item ) {
-		// Queried items become instances of Book. This method is declared in our Book class via the template trait.
+		/**
+		 * Queried items become instances of Book. This method is declared in our Book class via the template trait.
+		 * @var $item \BerlinDB_Example\DB\Rows\Book
+		 */
 		echo $item->get_template('index');
 	}
 

@@ -1,13 +1,20 @@
-# Boilerplate for Custom Projects
+# Underpin BerlinDB Example
 
-This is a plugin boilerplate built on the [Underpin](https://github.com/alexstandiford/underpin) Framework. For
-information on how to use this, check out Underpin's docs.
+This is an example plugin that shows you how to create a `Books` table in MySQL using BerlinDB and Underpin. It is based
+on the [WordPress Example](https://github.com/berlindb/wordpress-example) repostiory.
 
-This plugin expects that Underpin has been installed as a [WordPress Must-Use plugin](https://wordpress.org/support/article/must-use-plugins/).
+This plugin is intended for you to clone, hack, and learn how BerlinDB works with Underpin.
 
-## Webpack Config
+**Important** - You should only run this repository on a non-production environment!
 
-The Webpack and NPM configuration in this plugin is a barebones WordPress configuration that aligns the script dir with
-Underpin's default script directory. It is intentionally un-opinionated, but it is set-up and ready to be extended.
+## To Use:
 
-The default entrypoint is `src/index.js`.
+1. Clone this repository in your WordPress install's `plugins` directory
+1. Run `composer install`
+1. Activate this plugin
+1. Visit a single post
+
+You will see that the post content is replaced with a list of Harry Potter books, in order of publish.
+
+From here, you can tinker with the query, the files that get saved, and everything else inside of the `bootstrap.php`
+file. There are many comments in this file, and should help
